@@ -6,7 +6,7 @@ class Pessoa:
         self.filhos = list (filhos)
 
     def cumprimentar(self):
-        return f'Olá{id(self)}'
+        return f'Olá meu nome é {self.nome}'
     @staticmethod
     def metodo_estatico():
         return 42
@@ -16,7 +16,7 @@ class Pessoa:
         return f'{cls} - olhos{cls}'
 
 if __name__ == '__main__':
-    wallysson = Pessoa(nome='Wallysson')
+    wallysson = Wallysson(nome='Wallysson')
     jéssica = Pessoa(wallysson, nome='Jéssica')
     print(Pessoa.cumprimentar(jéssica))
     print(id(jéssica))
